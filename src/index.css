@@ -1,0 +1,10 @@
+@import './styles/fonts.css';
+@import './styles/reset.css';
+@import './styles/scrollReset.css';
+@import './styles/shadows.css';
+@import './styles/placeholderAnimation.css';
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
