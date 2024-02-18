@@ -6,7 +6,7 @@ export default {
   component: PrimaryButton,
   tags: ['autodocs'],
   argTypes: {
-    children: {
+    label: {
       description: 'Specifies the content of the button.',
       control: 'text',
     },
@@ -20,6 +20,6 @@ export default {
 /**This is the default version of **PrimaryButton** component:*/
 export const Default = {
   args: {
-    children: "Contact"
+    label: "Contact"
   },
 }

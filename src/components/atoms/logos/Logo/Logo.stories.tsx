@@ -2,7 +2,7 @@ import Logo from './Logo';
 
 /** The **Logo** component renders the Logo. */
 export default {
-  title: 'Atoms/Logo/Logo',
+  title: 'Atoms/Logos/Logo',
   component: Logo,
   tags: ['autodocs'],
   argTypes: {
