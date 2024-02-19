@@ -19,11 +19,11 @@ export default {
       control: 'text',
     },
     smWidth: {
-      description: 'Specifies the width of the icon in a string format in a medium size screen. Uses TailwindCSS classes.',
+      description: 'Optional. Specifies the width of the icon in a string format in a medium size screen. Uses TailwindCSS classes.',
       control: 'text',
     },
     smHeight: {
-      description: 'Specifies the height of the icon in a string format in a medium size screen. Uses TailwindCSS classes.',
+      description: 'Optional. Specifies the height of the icon in a string format in a medium size screen. Uses TailwindCSS classes.',
       control: 'text',
     },
   }
@@ -33,7 +33,7 @@ export default {
 export const Default = {
   args: {
     fillColor: "text-neutral-900",
-    width: "w-[2rem]",
-    height: "h-[2rem]",
+    width: "w-[1.5rem]",
+    height: "h-[1.5rem]",
   },
 };

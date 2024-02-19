@@ -10,9 +10,9 @@ export default {
       description: 'Specifies the content of the button.',
       control: 'text',
     },
-    onClick: {
-      description: 'Fires an action when the button is pressed.',
-      action: 'Button clicked!'
+    handleClick: {
+      description: 'A custom-made function that is activated when the button is pressed.',
+      action: 'Button pressed. HandleClick function activated!'
     },
   },
 }

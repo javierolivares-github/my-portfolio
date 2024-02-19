@@ -33,6 +33,7 @@ export default {
         "accent-04": "#FFC3D8",
         "accent-05": "#A0DCFF",
         "accent-06": "#D9E8EF",
+        "red-600": "#DC2626",
       }
     },
   },

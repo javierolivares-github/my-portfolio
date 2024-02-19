@@ -1,4 +1,3 @@
-import React from "react";
 import { fireEvent, render, screen } from '@testing-library/react';
 import { describe, test, vi, expect } from 'vitest';
 import PrimaryButton from "./PrimaryButton";
