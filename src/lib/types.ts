@@ -10,8 +10,6 @@ export type MessageProps = {
 export type TechLogoProps = {
   width: string;
   height: string;
-  smWidth: string;
-  smHeight: string;
 }
 
 export type SocialLogoProps = {

@@ -1,9 +1,9 @@
 import '/src/index.css';
 import { TechLogoProps } from '../../../../../lib/types';
 
-const HtmlLogo = ({ width, height, smWidth, smHeight }: TechLogoProps) => {
+const HtmlLogo = ({ width, height }: TechLogoProps) => {
   return (
-    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className={`${width} ${height} ${smWidth} ${smHeight}`}>
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className={`${width} ${height}`}>
       <g clip-path="url(#clip0_427_4231)">
       <path d="M15.0577 0H0.931641L2.25598 14.3579L7.99443 15.9844H7.9946H7.99477L13.7333 14.3579L15.0577 0Z" fill="#E44E26"/>
       <path d="M7.99414 1.16943V14.7685H7.99431L12.642 13.4511L13.7748 1.16943H7.99414Z" fill="#F16529"/>
