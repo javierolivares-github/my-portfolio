@@ -1,10 +1,10 @@
 export const projectCollection = [
   {
     id: 1,
-    imageUrl: 'images/cutted-min/nike-desktop-shoot-cutted.png',
-    name: 'Nike Store',
-    description: 'Project inspired in The Official Nike Store. Fully responsive. Developed in React, NextJS, and TailwindCSS.',
-    techUrls: [
+    projectImageUrl: 'images/cutted-min/nike-desktop-shoot-cutted.png',
+    projectName: 'Nike Store',
+    projectDescription: 'Project inspired in The Official Nike Store. Fully responsive. Developed in React, NextJS, and TailwindCSS.',
+    projectTechUrls: [
       { id: 1, name: 'HTML', url: '/svgs/html-logo.svg'},
       { id: 2, name: 'CSS', url: '/svgs/css-logo.svg'},
       { id: 3, name: 'JavaScript', url: '/svgs/js-logo.svg'},
@@ -15,10 +15,10 @@ export const projectCollection = [
   },
   {
     id: 2,
-    imageUrl: 'images/cutted-min/twitter-desktop-shoot-cutted.png',
-    name: 'Twitter Website Clone',
-    description: 'Project inspired in The Old Twitter Website. Fully responsive. Developed in React, and TailwindCSS. Tested with React Testing Library and Vitest.',
-    techUrls: [
+    projectImageUrl: 'images/cutted-min/twitter-desktop-shoot-cutted.png',
+    projectName: 'Twitter Website Clone',
+    projectDescription: 'Project inspired in The Old Twitter Website. Fully responsive. Developed in React, and TailwindCSS. Tested with React Testing Library and Vitest.',
+    projectTechUrls: [
       { id: 1, name: 'HTML', url: '/svgs/html-logo.svg'},
       { id: 2, name: 'CSS', url: '/svgs/css-logo.svg'},
       { id: 3, name: 'JavaScript', url: '/svgs/js-logo.svg'},
@@ -28,10 +28,10 @@ export const projectCollection = [
   },
   {
     id: 3,
-    imageUrl: 'images/cutted-min/omnifood-desktop-shoot-cutted.png',
-    name: 'Omnifood',
-    description: 'Project inspired in the world of healthy food and people with no time. Fully responsive. Developed in HTML, CSS, and JavaScript.',
-    techUrls: [
+    projectImageUrl: 'images/cutted-min/omnifood-desktop-shoot-cutted.png',
+    projectName: 'Omnifood',
+    projectDescription: 'Project inspired in the world of healthy food and people with no time. Fully responsive. Developed in HTML, CSS, and JavaScript.',
+    projectTechUrls: [
       { id: 1, name: 'HTML', url: '/svgs/html-logo.svg'},
       { id: 2, name: 'CSS', url: '/svgs/css-logo.svg'},
       { id: 3, name: 'JavaScript', url: '/svgs/js-logo.svg'},
@@ -39,10 +39,10 @@ export const projectCollection = [
   },
   {
     id: 4,
-    imageUrl: 'images/cutted-min/todoapp-desktop-shoot-cutted.png',
-    name: 'Todo App',
-    description: 'A Todo App. Fully responsive. Developed in React.',
-    techUrls: [
+    projectImageUrl: 'images/cutted-min/todoapp-desktop-shoot-cutted.png',
+    projectName: 'Todo App',
+    projectDescription: 'A Todo App. Fully responsive. Developed in React.',
+    projectTechUrls: [
       { id: 1, name: 'HTML', url: '/svgs/html-logo.svg'},
       { id: 2, name: 'CSS', url: '/svgs/css-logo.svg'},
       { id: 3, name: 'JavaScript', url: '/svgs/js-logo.svg'},
@@ -51,10 +51,10 @@ export const projectCollection = [
   },
   {
     id: 5,
-    imageUrl: 'images/cutted-min/agencia8px-desktop-shoot-cutted.png',
-    name: 'Agencia8px',
-    description: 'Project inspired in The Digital Marketing World. Developed HTML, CSS, and JavaScript.',
-    techUrls: [
+    projectImageUrl: 'images/cutted-min/agencia8px-desktop-shoot-cutted.png',
+    projectName: 'Agencia8px',
+    projectDescription: 'Project inspired in The Digital Marketing World. Developed HTML, CSS, and JavaScript.',
+    projectTechUrls: [
       { id: 1, name: 'HTML', url: '/svgs/html-logo.svg'},
       { id: 2, name: 'CSS', url: '/svgs/css-logo.svg'},
       { id: 3, name: 'JavaScript', url: '/svgs/js-logo.svg'},
@@ -62,10 +62,10 @@ export const projectCollection = [
   },
   {
     id: 6,
-    imageUrl: 'images/cutted-min/idstudio-desktop-shoot-cutted.png',
-    name: 'idStudio',
-    description: 'Project inspired by Interior Design Business. Fully responsive. Developed in HTML, CSS, and JavaScript.',
-    techUrls: [
+    projectImageUrl: 'images/cutted-min/idstudio-desktop-shoot-cutted.png',
+    projectName: 'idStudio',
+    projectDescription: 'Project inspired by Interior Design Business. Fully responsive. Developed in HTML, CSS, and JavaScript.',
+    projectTechUrls: [
       { id: 1, name: 'HTML', url: '/svgs/html-logo.svg'},
       { id: 2, name: 'CSS', url: '/svgs/css-logo.svg'},
       { id: 3, name: 'JavaScript', url: '/svgs/js-logo.svg'},
@@ -73,10 +73,10 @@ export const projectCollection = [
   },
   {
     id: 7,
-    imageUrl: 'images/cutted-min/travel-desktop-shoot-cutted.png',
-    name: 'Travel',
-    description: 'Project inspired in by The Adventure and Travels. Fully responsive. Developed in React, and CSS.',
-    techUrls: [
+    projectImageUrl: 'images/cutted-min/travel-desktop-shoot-cutted.png',
+    projectName: 'Travel',
+    projectDescription: 'Project inspired in by The Adventure and Travels. Fully responsive. Developed in React, and CSS.',
+    projectTechUrls: [
       { id: 1, name: 'HTML', url: '/svgs/html-logo.svg'},
       { id: 2, name: 'CSS', url: '/svgs/css-logo.svg'},
       { id: 3, name: 'JavaScript', url: '/svgs/js-logo.svg'},

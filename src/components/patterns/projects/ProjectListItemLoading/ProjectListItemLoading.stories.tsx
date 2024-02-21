@@ -1,15 +1,11 @@
 import ProjectListItemLoading from './ProjectListItemLoading';
 
-/** The **ProjectListItemLoading** component renders... */
+/** The **ProjectListItemLoading** component renderize a card for a project in a loading style. */
 export default {
-  title: 'Atoms/ProjectListItemLoading',
+  title: 'Patterns/Project/ProjectListItemLoading',
   component: ProjectListItemLoading,
   tags: ['autodocs'],
   argTypes: {
-    argument1: {
-      description: 'lorem ipsum...',
-      control: 'text',
-    },
   },
 }
 

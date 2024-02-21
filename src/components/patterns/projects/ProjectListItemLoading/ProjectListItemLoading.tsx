@@ -3,7 +3,7 @@ import '/src/index.css';
 const ProjectListItemLoading = () => {
   return (
     // Wrapper
-    <div className='w-full lg:max-w-[30rem] xl:max-w-[32.5rem]'>
+    <div className='w-full lg:max-w-[28.75rem] xl:max-w-[32.5rem]'>
       {/* Container */}
       <div className='flex flex-col gap-3'>
 
@@ -13,13 +13,13 @@ const ProjectListItemLoading = () => {
         {/* Texts */}
         <div className='flex flex-col gap-2'>
           {/* Headline-2__loading */}
-          <div className='w-[10rem] h-[1.5rem] rounded bg-gray-pulse-animation'></div>
+          <div className='w-[10rem] sm:w-[11.25rem] h-[1.5rem] sm:h-[2rem] lg:h-[2.375rem] rounded bg-gray-pulse-animation'></div>
           {/* Body-texts */}
           <div className='flex flex-col gap-1'>
             {/* Body-text__loading */}
-            <div className='w-[22.5rem] h-[1rem] rounded bg-gray-pulse-animation'></div>
+            <div className='w-full max-w-[22.5rem] sm:max-w-[23.75rem] h-[1rem] sm:h-[1.25rem] rounded bg-gray-pulse-animation'></div>
             {/* Body-text__loading */}
-            <div className='w-[21.25rem] h-[1rem] rounded bg-gray-pulse-animation'></div>
+            <div className='w-full max-w-[21.25rem] h-[1rem] sm:h-[1.25rem] rounded bg-gray-pulse-animation'></div>
           </div>
         </div>
 

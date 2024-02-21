@@ -7,12 +7,12 @@ import { ProjectListItemProps } from '../../../../lib/types';
 const ProjectListItem = ({ projectImageUrl, projectName, projectDescription, projectTechUrls }: ProjectListItemProps) => {
   return (
     // Wrapper 
-    <div className='flex justify-center items-center w-full lg:max-w-[460px] xl:max-w-[520px]'>
+    <div className='flex justify-center items-center w-full lg:max-w-[28.75rem] xl:max-w-[32.5rem]'>
       {/* Container  */}
       <div className='flex flex-col gap-3'>
 
         {/* Image */}
-        <div className='w-full h-[240px] sm:h-[480px] lg:h-[540px] overflow-hidden rounded shadow-custom'>
+        <div className='w-full h-[15rem] sm:h-[30rem] lg:h-[33.75rem] overflow-hidden rounded shadow-custom'>
           <img 
             src={projectImageUrl}
             className='object-cover w-full h-auto'
