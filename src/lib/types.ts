@@ -31,3 +31,21 @@ export type IconProps = {
 export type IconButton = {
   handleClick: () => void;
 }
+
+interface Tech {
+  id: number;
+  name: string;
+  url: string;
+}
+
+export type ProjectListItemProps = {
+  projectImageUrl: string;
+  projectName: string;
+  projectDescription: string;
+  projectTechUrls: Tech[];
+}
+
+export type ProjectListProps = {
+  status: string;
+  data: ProjectListItemProps[] | [];
+}

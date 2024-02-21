@@ -1,4 +1,4 @@
-.bg-color-pulse-animation {
+.bg-gray-pulse-animation {
   background-color: #e7e7e7;
   animation: pulse 1.5s infinite alternate;
 }

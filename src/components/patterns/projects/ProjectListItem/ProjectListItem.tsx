@@ -1,21 +1,10 @@
 import '/src/index.css';
 import Headline2 from '../../../atoms/typography/Headline2';
 import BodyText from '../../../atoms/typography/BodyText';
+import { ProjectListItemProps } from '../../../../lib/types';
 
-interface Tech {
-  id: number;
-  name: string;
-  url: string;
-}
 
-type ProjectItemProps = {
-  projectImageUrl: string;
-  projectName: string;
-  projectDescription: string;
-  projectTechUrls: Tech[];
-}
-
-const ProjectListItem = ({ projectImageUrl, projectName, projectDescription, projectTechUrls }: ProjectItemProps) => {
+const ProjectListItem = ({ projectImageUrl, projectName, projectDescription, projectTechUrls }: ProjectListItemProps) => {
   return (
     // Wrapper 
     <div className='flex justify-center items-center w-full lg:max-w-[460px] xl:max-w-[520px]'>
