@@ -34,6 +34,7 @@ export default {
         "accent-05": "#A0DCFF",
         "accent-06": "#D9E8EF",
         "red-600": "#DC2626",
+        "white-900": "#FFFFFF",
       }
     },
   },

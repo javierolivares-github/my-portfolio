@@ -1,6 +1,7 @@
 export type TextProps = {
   children: string;
   color: string;
+  align?: string;
 }
 
 export type MessageProps = {
