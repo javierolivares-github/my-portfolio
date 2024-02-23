@@ -17,32 +17,45 @@ const Navbar = () => {
     setShowMobileMenu(false)
   }
 
+  const routes = [
+    { path: '/', name: 'Home' },
+    { path: '/about', name: 'About' },
+    { path: '/blog', name: 'Blog' },
+  ]
+
   return (
-    // navbar
-    <nav className='w-full h-auto flex flex-col px-4 sm:px-8'>
-      {/* navbar wrapper top start */}
+    // Navbar-wrapper
+    <nav className='w-full h-auto flex flex-col items-center px-4 sm:px-8'>
+
+      {/* Wrapper-top */}
       <div className='w-full h-[80px] max-w-[1120px] flex justify-center items-center '>
 
-        {/* navbar container start */}
+        {/* Container */}
         <div className='w-full flex justify-between items-center'>
-          {/* logo start */}
+
+          {/* Logo */}
           {showMobileMenu ? (
             <Logo color='text-neutral-800' visibility={false}>Javier Olivares</Logo>
           ) : (
             <Logo color='text-neutral-800' visibility={true}>Javier Olivares</Logo>
           )}
-          {/* logo end */}
 
-          {/* menu start */}
-            <ul className='hidden lg:flex items-center gap-10'>
-              <NavbarText color='text-neutral-800'>Works</NavbarText>
-              <NavbarText color='text-neutral-800'>About</NavbarText>
-              <NavbarText color='text-neutral-800'>Blog</NavbarText>
-              <PrimaryButton label='Contact' handleClick={() => {}}/>
-            </ul>
-          {/* menu end */}
+          {/* Menu */}
+          <ul className='hidden lg:flex items-center gap-10'>
 
-          {/* mobile menu trigger start */}
+            {/* Menu-items */}
+            {routes.map((route) => (
+              <li key={route.name} className={`cursor-pointer hover:underline w-full font-normal text-[1.125rem] leading-[1.75rem]
+              lg:font-semibold text-neutral-800`}>
+                <a href={route.path}>{route.name}</a>
+              </li>
+            ))}
+            
+            {/* Contact-Button */}
+            <PrimaryButton label='Contact' handleClick={() => {}}/>
+          </ul>  
+
+          {/* Mobile-menu-triggers */}
           <div className='lg:hidden'>
             {showMobileMenu ? (
               <CloseButton handleClick={closeMobileMenu}/>
@@ -50,19 +63,14 @@ const Navbar = () => {
               <MenuButton handleClick={openMobileMenu}/>
             )}
           </div>
-          {/* mobile menu trigger end */}
           
         </div>
-        {/* navbar container end */}
-
       </div>
-      {/* navbar-wrapper-top-end */}
 
-      {/* navbar wrapper down start */}
-      <div className='lg:hidden'>
+      {/* Wrapper-down Mobile-menu-content */}
+      <div className='w-full lg:hidden'>
         {showMobileMenu &&  (
-          // mobile menu start
-          <div className='w-full h-[100vh] flex items-center'>
+          <div className='w-full h-[100vh] flex items-center justify-start'>
             <ul className='flex flex-col justify-start items-center gap-8'>
               <NavbarText color='text-neutral-800'>Works</NavbarText>
               <NavbarText color='text-neutral-800'>About</NavbarText>
@@ -70,11 +78,8 @@ const Navbar = () => {
               <PrimaryButton label='Contact' handleClick={() => {}}/>
             </ul>
           </div>
-          // mobile menu end
         )}        
       </div>
-      {/* navbar wrapper down end */}
-      
     </nav>
   )
 }

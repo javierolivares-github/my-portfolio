@@ -22,6 +22,10 @@ export default {
       description: 'Defines a string array containing the URLs of the technology images used in the project.',
       control: 'text',
     },
+    projectPageUrl: {
+      description: 'Defines a the URL of the project in a string format.',
+      control: 'text',
+    },
   },
 }
 
@@ -38,6 +42,7 @@ export const Default = {
       { id: 4, name: 'React', url: '/svgs/react-logo.svg'},
       { id: 5, name: 'NextJS', url: '/svgs/next-logo.svg'},
       { id: 6, name: 'TailwindCSS', url: '/svgs/tailwindcss-logo.svg'},
-    ]
+    ],
+    projectPageUrl: "https://nike-clone-javier-olivares.vercel.app/"
   },
 }

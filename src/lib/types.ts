@@ -2,6 +2,7 @@ export type TextProps = {
   children: string;
   color: string;
   align?: string;
+  key?: string | number;
 }
 
 export type MessageProps = {
@@ -14,11 +15,10 @@ export type TechLogoProps = {
 }
 
 export type SocialLogoProps = {
-  fillColor: string;
+  fillColorPrimary: string;
+  fillColorSecondary: string;
   width: string;
   height: string;
-  smWidth: string;
-  smHeight: string;
 }
 
 export type IconProps = {
@@ -40,10 +40,12 @@ interface Tech {
 }
 
 export type ProjectListItemProps = {
+  id?: number;
   projectImageUrl: string;
   projectName: string;
   projectDescription: string;
   projectTechUrls: Tech[];
+  projectPageUrl: string;
 }
 
 export type ProjectListProps = {

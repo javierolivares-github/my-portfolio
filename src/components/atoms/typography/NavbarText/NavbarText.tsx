@@ -1,9 +1,9 @@
 import '/src/index.css';
 import { TextProps } from '../../../../lib/types';
 
-const NavbarText = ({ children, color}: TextProps) => {
+const NavbarText = ({ children, color, key}: TextProps) => {
   return (
-    <li className={`cursor-pointer hover:underline w-full font-normal text-[1.125rem] leading-[1.75rem]
+    <li key={key} className={`cursor-pointer hover:underline w-full font-normal text-[1.125rem] leading-[1.75rem]
     lg:font-semibold ${color}`}>
       {children}
     </li>

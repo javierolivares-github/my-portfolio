@@ -1,11 +1,15 @@
-import React from 'react'
-import '/src/index.css'
+import { BrowserRouter, Routes } from 'react-router-dom';
+import '/src/index.css';
+import { renderRoutes } from './routes';
+
 
 function App() {
   return (
-    <h1 className='text-3xl font-bold underline'>
-      TailwindCSS works!
-    </h1>
+    <BrowserRouter>
+      <Routes>
+        {renderRoutes()}
+      </Routes>
+    </BrowserRouter>
   )
 }
 

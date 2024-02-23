@@ -6,5 +6,5 @@ let server = new Server();
 export const mockServer = () => {
   server.get('/api/projects', {
     data: projectCollection,
-  });
+  })
 }

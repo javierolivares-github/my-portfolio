@@ -24,12 +24,14 @@ const ProjectList = ({ status, data }: ProjectListProps) => {
       className={`flex flex-col gap-12 lg:flex-row lg:flex-wrap lg:max-w-[70rem] lg:justify-between lg:items-start`}
     >
       {data.map((project, index) => (
-        <ProjectListItem 
+        <ProjectListItem
+          id={project.id} 
           key={index}
           projectImageUrl={project.projectImageUrl}
           projectName={project.projectName}
           projectDescription={project.projectDescription}
           projectTechUrls={project.projectTechUrls}
+          projectPageUrl={project.projectPageUrl}
         />
       ))}
     </div>

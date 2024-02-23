@@ -1,4 +1,8 @@
-export const projectCollection = [
+import { ProjectListItemProps } from "../lib/types"
+
+type ProjectCollectionType = ProjectListItemProps[] | [];
+
+export const projectCollection: ProjectCollectionType = [
   {
     id: 1,
     projectImageUrl: 'images/cutted-min/nike-desktop-shoot-cutted.png',
@@ -11,7 +15,8 @@ export const projectCollection = [
       { id: 4, name: 'React', url: '/svgs/react-logo.svg'},
       { id: 5, name: 'NextJS', url: '/svgs/next-logo.svg'},
       { id: 6, name: 'TailwindCSS', url: '/svgs/tailwindcss-logo.svg'},
-    ]
+    ],
+    projectPageUrl: 'https://nike-clone-javier-olivares.vercel.app/',
   },
   {
     id: 2,
@@ -24,7 +29,8 @@ export const projectCollection = [
       { id: 3, name: 'JavaScript', url: '/svgs/js-logo.svg'},
       { id: 4, name: 'React', url: '/svgs/react-logo.svg'},
       { id: 5, name: 'TailwindCSS', url: '/svgs/tailwindcss-logo.svg'},
-    ]
+    ],
+    projectPageUrl: 'https://twitter-clone-javier-olivares.netlify.app/',
   },
   {
     id: 3,
@@ -35,19 +41,21 @@ export const projectCollection = [
       { id: 1, name: 'HTML', url: '/svgs/html-logo.svg'},
       { id: 2, name: 'CSS', url: '/svgs/css-logo.svg'},
       { id: 3, name: 'JavaScript', url: '/svgs/js-logo.svg'},
-    ]
+    ],
+    projectPageUrl: 'https://omnifood-code-projects.netlify.app/',
   },
   {
     id: 4,
     projectImageUrl: 'images/cutted-min/todoapp-desktop-shoot-cutted.png',
     projectName: 'Todo App',
-    projectDescription: 'A Todo App. Fully responsive. Developed in React.',
+    projectDescription: 'A Todo App. Fully responsive. CRUD. Developed in React.',
     projectTechUrls: [
       { id: 1, name: 'HTML', url: '/svgs/html-logo.svg'},
       { id: 2, name: 'CSS', url: '/svgs/css-logo.svg'},
       { id: 3, name: 'JavaScript', url: '/svgs/js-logo.svg'},
       { id: 4, name: 'React', url: '/svgs/react-logo.svg'},
-    ]
+    ],
+    projectPageUrl: 'https://react-todo-javier-olivares.netlify.app/',
   },
   {
     id: 5,
@@ -58,7 +66,8 @@ export const projectCollection = [
       { id: 1, name: 'HTML', url: '/svgs/html-logo.svg'},
       { id: 2, name: 'CSS', url: '/svgs/css-logo.svg'},
       { id: 3, name: 'JavaScript', url: '/svgs/js-logo.svg'},
-    ]
+    ],
+    projectPageUrl: 'https://agencia8px.netlify.app/',
   },
   {
     id: 6,
@@ -69,7 +78,8 @@ export const projectCollection = [
       { id: 1, name: 'HTML', url: '/svgs/html-logo.svg'},
       { id: 2, name: 'CSS', url: '/svgs/css-logo.svg'},
       { id: 3, name: 'JavaScript', url: '/svgs/js-logo.svg'},
-    ]
+    ],
+    projectPageUrl: 'https://id-studio.netlify.app/',
   },
   {
     id: 7,
@@ -81,6 +91,7 @@ export const projectCollection = [
       { id: 2, name: 'CSS', url: '/svgs/css-logo.svg'},
       { id: 3, name: 'JavaScript', url: '/svgs/js-logo.svg'},
       { id: 4, name: 'React', url: '/svgs/react-logo.svg'},
-    ]
+    ],
+    projectPageUrl: 'https://react-responsivewebsite-trvl.netlify.app/',
   },
 ]

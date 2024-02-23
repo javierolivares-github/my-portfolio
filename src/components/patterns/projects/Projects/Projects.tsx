@@ -4,6 +4,8 @@ import { ProjectListProps } from '../../../../lib/types';
 import ProjectList from '../ProjectList';
 import Headline1 from '../../../atoms/typography/Headline1';
 import '/src/index.css';
+import { mockServer } from '../../../../mock_server/mockServer';
+mockServer();
 
 const Projects = () => {
   const [ projectState, setProjectState ] = useState<ProjectListProps>({
@@ -35,11 +37,11 @@ const Projects = () => {
 
   return (
     // projects-wrapper
-    <div className={`w-full px-4 sm:px-8 pt-8 pb-[4.5rem] lg:pb-[96px] xl:pb-[112px]`}>
+    <div className={`w-full flex justify-center px-4 sm:px-8 pt-8 pb-[4.5rem] lg:pb-[96px] xl:pb-[112px]`}>
       {/* container */}
-      <div className={`flex flex-col gap-8 sm:gap-12`}>
+      <div className={`w-full flex flex-col gap-8 sm:gap-12 lg:max-w-[70rem]`}>
         {/* title */}
-        <Headline1 color='text-neutral-900'>Recent works:</Headline1>
+        <Headline1 color='text-neutral-900'>Recent projects:</Headline1>
         {/* project-list */}
         <ProjectList
           status={projectState.status}
