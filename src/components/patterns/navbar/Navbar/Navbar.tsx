@@ -5,6 +5,7 @@ import MenuButton from '../../../atoms/buttons/MenuButton';
 import CloseButton from '../../../atoms/buttons/CloseButton';
 import NavbarText from '../../../atoms/typography/NavbarText';
 import PrimaryButton from '../../../atoms/buttons/PrimaryButton';
+import LinkButton from '../../../atoms/buttons/LinkButton';
 
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -37,7 +38,9 @@ const Navbar = () => {
           {showMobileMenu ? (
             <Logo color='text-neutral-800' visibility={false}>Javier Olivares</Logo>
           ) : (
-            <Logo color='text-neutral-800' visibility={true}>Javier Olivares</Logo>
+            <LinkButton url='/' target='_self'>
+              <Logo color='text-neutral-800' visibility={true}>Javier Olivares</Logo>
+            </LinkButton>
           )}
 
           {/* Menu */}
@@ -52,7 +55,10 @@ const Navbar = () => {
             ))}
             
             {/* Contact-Button */}
-            <PrimaryButton label='Contact' handleClick={() => {}}/>
+            <LinkButton url='#contact-section' target='_self'>
+              <PrimaryButton label='Contact' handleClick={() => {}}/>
+            </LinkButton>
+            
           </ul>  
 
           {/* Mobile-menu-triggers */}

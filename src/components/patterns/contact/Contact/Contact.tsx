@@ -7,7 +7,10 @@ import '/src/index.css';
 const Contact = () => {
   return (
     // wrapper
-    <div className={`w-full flex justify-center items-center px-4 sm:px-8 py-[4.5rem] sm:py-[6rem] lg:py-[7rem] bg-neutral-900`}>
+    <div 
+      id="contact-section" 
+      className={`w-full flex justify-center items-center px-4 sm:px-8 py-[4.5rem] sm:py-[6rem] lg:py-[7rem] bg-neutral-900`}
+    >
       {/* container */}
       <div className={`w-full lg:max-w-[70rem] flex flex-col items-center gap-6 sm:gap-8`}>
 
