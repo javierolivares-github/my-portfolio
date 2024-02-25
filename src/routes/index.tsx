@@ -1,6 +1,7 @@
 import { Suspense } from 'react';
 import { lazy, Fragment } from 'react';
 import { Route } from 'react-router-dom';
+import LoadingScreen from '../components/patterns/loading/LoadingScreen';
 
 export const renderRoutes = () => {
   return routes.map((route, index) => {
@@ -13,7 +14,7 @@ export const renderRoutes = () => {
         key={index} 
         path={route.path} 
         element={
-          <Suspense fallback={<h1>Loading...</h1>}>
+          <Suspense fallback={<LoadingScreen />}>
             <Guard>
               <Layout>
                 <Component />

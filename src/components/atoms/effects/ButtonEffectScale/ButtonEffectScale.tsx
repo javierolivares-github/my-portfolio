@@ -6,7 +6,7 @@ type ButtonEffectProps = {
 
 const ButtonEffectScale = ({ children }: ButtonEffectProps) => {
   return (
-    <div className='no-underline hover:scale-110 transition cursor-pointer'>
+    <div className='no-underline lg:hover:scale-110 lg:transition cursor-pointer'>
       {children}
     </div>
   )

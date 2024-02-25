@@ -15,7 +15,7 @@ export default PrimaryButton;
 
 type ButtonProps = {
   label: string;
-  handleClick: () => void;
+  handleClick?: () => void;
 }
 
 

@@ -9,7 +9,7 @@ describe('PrimmaryButton', () => {
     const label = 'Contact';
 
     render(
-      <PrimaryButton label={label} onClick={handleClick} />
+      <PrimaryButton label={label} handleClick={handleClick} />
     );
 
     const button = screen.getByRole('button', { name: /contact/i });
