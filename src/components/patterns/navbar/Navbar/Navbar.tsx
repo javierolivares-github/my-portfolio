@@ -3,9 +3,9 @@ import '/src/index.css';
 import Logo from '../../../atoms/logos/brand/Logo';
 import MenuButton from '../../../atoms/buttons/MenuButton';
 import CloseButton from '../../../atoms/buttons/CloseButton';
-import NavbarText from '../../../atoms/typography/NavbarText';
 import PrimaryButton from '../../../atoms/buttons/PrimaryButton';
-import LinkButton from '../../../atoms/buttons/LinkButton';
+import { Link } from 'react-router-dom';
+import ButtonEffectScale from '../../../atoms/effects/ButtonEffectScale';
 
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -38,9 +38,11 @@ const Navbar = () => {
           {showMobileMenu ? (
             <Logo color='text-neutral-800' visibility={false}>Javier Olivares</Logo>
           ) : (
-            <LinkButton url='/' target='_self'>
-              <Logo color='text-neutral-800' visibility={true}>Javier Olivares</Logo>
-            </LinkButton>
+            <Link to='/' target='_self'>
+              <ButtonEffectScale>
+                <Logo color='text-neutral-800' visibility={true}>Javier Olivares</Logo>
+              </ButtonEffectScale>
+            </Link>
           )}
 
           {/* Menu */}
@@ -48,16 +50,14 @@ const Navbar = () => {
 
             {/* Menu-items */}
             {routes.map((route) => (
-              <li key={route.name} className={`cursor-pointer hover:underline w-full font-normal text-[1.125rem] leading-[1.75rem]
-              lg:font-semibold text-neutral-800`}>
-                <a href={route.path}>{route.name}</a>
+              <li key={route.name} className={`cursor-pointer hover:underline w-full font-normal 
+              text-[1.125rem] leading-[1.75rem] lg:font-semibold text-neutral-800`}>
+                <Link to={route.path} target='_self'>{route.name}</Link>
               </li>
             ))}
             
             {/* Contact-Button */}
-            <LinkButton url='#contact-section' target='_self'>
-              <PrimaryButton label='Contact' handleClick={() => {}}/>
-            </LinkButton>
+            <PrimaryButton label='Contact' handleClick={() => {}}/>
             
           </ul>  
 
@@ -77,10 +77,16 @@ const Navbar = () => {
       <div className='w-full lg:hidden'>
         {showMobileMenu &&  (
           <div className='w-full h-[100vh] flex items-center justify-start'>
-            <ul className='flex flex-col justify-start items-center gap-8'>
-              <NavbarText color='text-neutral-800'>Works</NavbarText>
-              <NavbarText color='text-neutral-800'>About</NavbarText>
-              <NavbarText color='text-neutral-800'>Blog</NavbarText>
+            <ul onClick={closeMobileMenu} className='flex flex-col justify-start items-center gap-8'>
+              {/* Menu Items */}
+              {routes.map((route) => (
+                <li key={route.name} className={`cursor-pointer hover:underline w-full font-normal 
+                text-[1.125rem] leading-[1.75rem] lg:font-semibold text-neutral-800`}>
+                  <Link to={route.path} target='_self'>{route.name}</Link>
+                </li>
+              ))}
+
+              {/* Contact Button */}
               <PrimaryButton label='Contact' handleClick={() => {}}/>
             </ul>
           </div>
